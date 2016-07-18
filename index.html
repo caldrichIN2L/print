@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>iN2L-Print</title>
+		<meta name="description" content="" />
+		<meta name="author" content="iN2L" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+		
+		
+			function submitForm(){
+				///##############GLOBALS##############///
+				
+				var ajaxResult = "";
+				
+				///##############GLOBALS##############///
+				
+				//show loader gif in infoholder
+				$("#infoholder").html('<center><img src="img/loader.gif"></center>');
+				//run this ajax to verify login info
+				var emailVal = $('#email').val();
+				var passwordVal = $('#password').val();
+				
+				//alert("emailval = " + emailVal + " passwordval = " + passwordVal);
+				
+				//check to make sure values are not blank
+				
+				if(emailVal != "" && passwordVal!= ""){
+				
+					if (emailVal.substring(emailVal.length - 13, emailVal.length) != '@in2lmail.com'){
+					
+					$("#infoholder").html('Please use an email address ending in "@in2lmail.com"');
+					
+					}
+					else{
+					$.ajax({
+							type: 'POST',
+							url: 'userauthenticate.php',
+							data: { email: emailVal, password: passwordVal}, 
+								success:function(data){
+									if (data != "Email and password not recognized."){
+										location.href = "home.php"
+									}
+									else{
+										$("#infoholder").html(data);
+									}
+								}
+							});	
+					}
+									
+				}
+				else {
+					$("#infoholder").html("Please enter an email and password.");
+				}
+				
+				return false;
+			}
+		</script>
+		
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34293501-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	</head>
+
+	<body>
+		<form onSubmit="return submitForm()">
+			<center>
+			<img src="img/logo.jpg"><br><div class="titleBar">iN2L Print</div><br>
+			<table cellpadding="0" cellspacing="5" border="0"><tr>
+			<td>Email:</td> <td><input type="text" name="email" id="email" size="30"/><br /></td></tr>
+			<td>Password:</td> <td><input type="password" name="password" id="password" size="30"/></td></tr>
+			<tr><td colspan="2"><center><br><input name="Submit"  type="submit" value="Login"/></center></td><tr>
+			</table>
+			<div id="infoholder" style="color:#ff0000;"></div><br>
+			
+			</center>
+			<div style="width:800px; margin:auto;">
+			<ul style="font-size:18px;">
+			<li>First, set up an iN2L user button through <b>MY PAGE</b></li>
+			<li>Then, log in with the email and password associated with the user account<br>(i.e. email: bob@in2LmaiL.com, password: 1234)</li>
+			</ul>
+			<span style="font-size:12px;">You can also access iN2L Print from any computer with an internet connection by going to www.iN2Lprint.com</span>
+			</div>
+		</form> 
+	</body>
+</html>

@@ -1,0 +1,192 @@
+body {
+	font-family:Verdana;
+	font-size:28px;
+}
+input {
+	font-size:28px;
+}
+
+a:link {text-decoration:none; outline: none;}
+a:visited {text-decoration:none; outline: none;}
+a:hover {text-decoration:none; outline: none;}
+a:active {text-decoration:none; outline: none;}
+
+div.titleBar {
+	height:40px;
+	line-height:40px;
+	font-size:36px;
+	width:600px;
+	background-color:#66cc33;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+div.titleBar2 {
+	line-height:60px;
+	height:60px;
+	font-size:36px;
+	width:70%;
+	background-color:#66cc33;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+div.linkholder{
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#99ccff !important;
+	text-decoration:none !important;
+	color:#000000 !important;
+	margin-bottom:15px;
+	
+}
+div.linkholder:hover {
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#3366cc !important;
+	text-decoration:none !important;
+	color:#ffffff !important;
+	margin-bottom:15px;
+	
+}
+
+div.linkholderfolder{
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#ffcc00 !important;
+	text-decoration:none !important;
+	color:#000000 !important;
+	margin-bottom:15px;
+	background-image:url(../img/folder.png);
+	background-repeat:no-repeat;
+	background-position: 30px;
+}
+div.linkholderfolder:hover {
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#ff9933 !important;
+	text-decoration:none !important;
+	color:#ffffff !important;
+	margin-bottom:15px;
+	background-image:url(../img/folder.png);
+	background-repeat:no-repeat;
+	background-position: 30px;
+	
+}
+
+div.linkholderpicture{
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#99cc66 !important;
+	text-decoration:none !important;
+	color:#000000 !important;
+	margin-bottom:15px;
+	background-image:url(../img/picture.png);
+	background-repeat:no-repeat;
+	background-position: 30px;
+}
+div.linkholderpicture:hover {
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#66cc33 !important;
+	text-decoration:none !important;
+	color:#ffffff !important;
+	margin-bottom:15px;
+	background-image:url(../img/picture.png);
+	background-repeat:no-repeat;
+	background-position: 30px;
+	
+}
+
+img.inline
+{
+display:inline;
+} 
+div.inline
+{
+display:inline;
+} 
+
+div.linkholderdoc{
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#99ccff !important;
+	text-decoration:none !important;
+	color:#000000 !important;
+	margin-bottom:15px;
+	background-image:url(../img/document.png);
+	background-repeat:no-repeat;
+	background-position: 30px;
+	
+}
+div.linkholderdoc:hover {
+	width:70%;
+	min-width:70%;
+	line-height:60px;
+	height:60px;
+	padding-left:30px;
+	padding-right:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#3366cc !important;
+	text-decoration:none !important;
+	color:#ffffff !important;
+	margin-bottom:15px;
+	background-image:url(../img/document.png);
+	background-repeat:no-repeat;
+	background-position: 30px;
+	
+}
